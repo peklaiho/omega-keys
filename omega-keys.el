@@ -102,7 +102,7 @@
 (define-key omega-keys-extended-map "h" 'split-window-horizontally)
 ;; i
 ;; j
-(define-key omega-keys-extended-map "k" 'kill-this-buffer)
+(define-key omega-keys-extended-map "k" 'kill-current-buffer)
 (define-key omega-keys-extended-map "l" 'ibuffer)
 ;; m
 ;; n
