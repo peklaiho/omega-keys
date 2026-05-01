@@ -22,6 +22,7 @@
 ;; Prefix keymaps
 (define-prefix-command 'omega-keys-extended-map)
 (define-prefix-command 'omega-keys-custom-map)
+(define-prefix-command 'omega-keys-project-map)
 
 ;; Numeric arguments
 (define-key omega-keys-map "0" 'digit-argument)
@@ -51,7 +52,7 @@
 (define-key omega-keys-map "m" 'set-mark-command)
 (define-key omega-keys-map "n" 'newline)
 (define-key omega-keys-map "o" 'other-window)
-;; p
+(define-key omega-keys-map "p" 'omega-keys-project-map)
 (define-key omega-keys-map "q" 'query-replace)
 (define-key omega-keys-map "r" 'recenter-top-bottom)
 (define-key omega-keys-map "s" 'isearch-forward)
@@ -119,6 +120,23 @@
 (define-key omega-keys-extended-map "x" 'recentf-open-files)
 ;; y
 (define-key omega-keys-extended-map "z" 'read-only-mode)
+
+;; Project keys
+(define-key omega-keys-project-map "b" 'project-switch-to-buffer)
+(define-key omega-keys-project-map "c" 'project-compile)
+(define-key omega-keys-project-map "d" 'project-dired)
+(define-key omega-keys-project-map "e" 'project-eshell)
+(define-key omega-keys-project-map "f" 'project-find-file)
+(define-key omega-keys-project-map "g" 'project-find-regexp)
+(define-key omega-keys-project-map "k" 'project-kill-buffers)
+(define-key omega-keys-project-map "l" 'project-list-buffers)
+(define-key omega-keys-project-map "o" 'project-any-command)
+(define-key omega-keys-project-map "p" 'project-switch-project)
+(define-key omega-keys-project-map "q" 'project-query-replace-regexp)
+(define-key omega-keys-project-map "s" 'project-search)
+(define-key omega-keys-project-map "v" 'project-vc-dir)
+(define-key omega-keys-project-map "!" 'project-shell-command)
+(define-key omega-keys-project-map "&" 'project-async-shell-command)
 
 (define-minor-mode omega-keys-mode
   "Customized key bindings for modal editing."
