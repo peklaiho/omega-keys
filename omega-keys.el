@@ -81,7 +81,7 @@
 ;; M-n is free
 ;; M-o is free
 ;; M-p is free
-;; M-q is bound to keyboard-quit
+;; M-q is bound to fill-paragraph
 ;; M-r is bound to move-to-window-line-top-bottom
 (define-key omega-keys-map (kbd "M-s") 'isearch-backward)
 (define-key omega-keys-map (kbd "M-t") 'transpose-words)
