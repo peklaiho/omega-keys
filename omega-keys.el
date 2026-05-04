@@ -117,7 +117,7 @@
 (define-key omega-keys-extended-map "v" 'split-window-vertically)
 (define-key omega-keys-extended-map "w" 'visual-line-mode)
 (define-key omega-keys-extended-map "W" 'whitespace-mode)
-(define-key omega-keys-extended-map "x" 'recentf-open-files)
+(define-key omega-keys-extended-map "x" 'recentf-open)
 ;; y
 (define-key omega-keys-extended-map "z" 'read-only-mode)
 
