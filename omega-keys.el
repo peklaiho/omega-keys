@@ -94,11 +94,11 @@
 
 ;; Extended keys
 (define-key omega-keys-extended-map "a" 'mark-whole-buffer)
-(define-key omega-keys-extended-map "b" (if ido-mode 'ido-switch-buffer 'switch-to-buffer))
+(define-key omega-keys-extended-map "b" 'switch-to-buffer)
 ;; c
-(define-key omega-keys-extended-map "d" (if ido-mode 'ido-dired 'dired))
+(define-key omega-keys-extended-map "d" 'dired)
 ;; e
-(define-key omega-keys-extended-map "f" (if ido-mode 'ido-find-file 'find-file))
+(define-key omega-keys-extended-map "f" 'find-file)
 ;; g
 (define-key omega-keys-extended-map "h" 'split-window-horizontally)
 ;; i
@@ -110,7 +110,7 @@
 (define-key omega-keys-extended-map "o" 'delete-other-windows)
 (define-key omega-keys-extended-map "p" 'mark-paragraph)
 (define-key omega-keys-extended-map "q" 'save-buffers-kill-terminal)
-(define-key omega-keys-extended-map "r" (if ido-mode 'ido-find-file-read-only 'find-file-read-only))
+(define-key omega-keys-extended-map "r" 'find-file-read-only)
 (define-key omega-keys-extended-map "s" 'save-buffer)
 (define-key omega-keys-extended-map "t" 'delete-window)
 (define-key omega-keys-extended-map "u" 'undo)
