@@ -23,6 +23,7 @@
 (define-prefix-command 'omega-keys-extended-map)
 (define-prefix-command 'omega-keys-custom-map)
 (define-prefix-command 'omega-keys-project-map)
+(define-prefix-command 'omega-keys-register-map)
 
 ;; Numeric arguments
 (define-key omega-keys-map "0" 'digit-argument)
@@ -62,7 +63,7 @@
 (define-key omega-keys-map "w" 'kill-region)
 (define-key omega-keys-map "x" 'omega-keys-extended-map)
 (define-key omega-keys-map "y" 'yank)
-;; z
+(define-key omega-keys-map "z" 'omega-keys-register-map)
 
 ;; Meta keys
 (define-key omega-keys-map (kbd "M-a") 'beginning-of-buffer)
@@ -137,6 +138,18 @@
 (define-key omega-keys-project-map "v" 'project-vc-dir)
 (define-key omega-keys-project-map "!" 'project-shell-command)
 (define-key omega-keys-project-map "&" 'project-async-shell-command)
+
+;; Register keys
+(define-key omega-keys-register-map "a" 'append-to-register)
+(define-key omega-keys-register-map "b" 'bookmark-jump)
+(define-key omega-keys-register-map "g" 'jump-to-register)
+(define-key omega-keys-register-map "l" 'list-bookmarks)
+(define-key omega-keys-register-map "m" 'point-to-register)
+(define-key omega-keys-register-map "p" 'prepend-to-register)
+(define-key omega-keys-register-map "r" 'list-registers)
+(define-key omega-keys-register-map "s" 'bookmark-set)
+(define-key omega-keys-register-map "y" 'insert-register)
+(define-key omega-keys-register-map "w" 'copy-to-register)
 
 (define-minor-mode omega-keys-mode
   "Customized key bindings for modal editing."
